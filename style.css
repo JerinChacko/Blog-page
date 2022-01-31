@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-width:100%;
+  min-height:100vh;
+  font-family:'Merriweather', serif;
+}
+
+.main-container{
+  width:90%;
+  max-width:950px;
+  margin:5rem auto;
+  padding:1.5rem;
+}
+
+.avatar-img{
+  max-width:50px;
+  height:50px;
+  border-radius:100%;
+  margin-right:10px;
+  
+}
+
+.header{ 
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.header h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:800;
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.header p {
+  margin-bottom:2.4rem;
+}
+
+.hero-container{
+  display:flex;
+  justify-content:center;
+  margin:0 auto;
+  
+}
+
+.hero-img-container{
+  margin:2rem 3rem 3rem 0;
+  max-width:600px;
+}
+
+.hero-img{
+  max-width:100%;
+}
+
+.info-container {
+  margin:4rem 0;
+}
+
+.info-container h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size:24px;
+  font-weight:600;
+  letter-spacing:0.5px;
+  padding-bottom:1rem;
+}
+
+.info-container >p{
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  font-weight:600;
+  padding-bottom:0.5rem;
+}
+
+.avatar-container{
+ display:flex;
+align-items:center;
+margin-top: 1rem;
+}
+
+.avatar-container p{
+  margin-left:0;
+}
+
+.blogs-container{
+  
+  display:flex;
+  justify-content:space-between;
+}
+
+.blog-img{
+  max-width:100%;
+}
+
+.box-container {
+  width:300px;
+  gap:1rem;
+  margin-right:1rem;
+ 
+}
+
+.section-text-container{
+  
+  margin-top:1rem;
+  
+}
+
+h3.blog-sec-title{
+  font-size:1.3rem;
+}
+
+.section-text-container p{
+  font-size:0.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .hero-container{
+    flex-wrap:wrap;
+  }
+  
+  .hero-container .info-container{
+    margin-top:0;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  
+  body{
+    font-size:13px;
+  }
+  
+  .main-container{
+    margin:1rem;
+  }
+  .blogs-container{
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  
+  .hero-img-container{
+    width:100%;
+  }
+  
+  .hero-img{
+    min-width:320px;
+    
+  }
+}
